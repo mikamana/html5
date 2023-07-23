@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>컨텐츠리스트연습3_dl</title>
+
+  <style>
+
+  body,p,dl,dt,dd{
+    margin:0px; padding:0px; 
+  }
+
+  /*
+  정의형 목록 dl은  dt, dd로 항목이 구분되어 스타일 적용이가능  (ul,li는 여러개의의 컨덴츠를 반복할때 좋음, dl은 한개의 컨덴츠를 배치할때 좋음)
+  */
+
+  dl#contents_list{
+    width:250px; height:200px; margin:200px auto; background:#F9F9F9; border:solid 1px #CCCCCC; padding:30px;
+  }
+
+
+  dl#contents_list dt{
+    font:bold 16px "돋움"; text-align:center; margin-bottom:10px; 
+  }
+  dl#contents_list dd{
+    font:normal 12px "돋움"; color:#333; text-align:center; margin-bottom:10px; 
+  }
+    
+  </style>
+
+
+
+</head>
+
+<body>
+	
+   <dl id="contents_list">
+     <dt>프런트 LED</dt> <!-- 주의 dt 가 dd 보다먼저와야함  -->
+     <dd><img src="images/img01.jpg" alt="" ></dd>
+     <dd>XE의 J 블레이드 LED로 둘러싸인 헤드램프</dd>     
+   </dl>
+
+
+
+
+
+</body>
+</html>
