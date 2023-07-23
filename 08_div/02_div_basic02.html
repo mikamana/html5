@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>div요소 기초연습</title>
+
+	<style>
+		body{
+			margin:100px;
+		}
+
+		
+		div#div1{
+			width:600px; height: 600px; border:solid 1px #333;  margin-bottom:30px;
+		}
+		div#div1 .red{
+			width:200px; height:200px; float:left; background:red;
+		}
+		/* 두개이상의 div 요소를 나란히 나열할때는 나열되는 모든 div 에 float:left 로 적용해야한다*/
+		div#div1 .green{
+			width:200px; height:200px; float:left; background:green;
+		}
+		/* 이전의 div 요소와 정렬을 분리시킬려면 clear:both 속성을 적용 */
+		div#div1 .yellow{
+			width:200px; height:200px; float:left; background:yellow; clear:both;		
+			/* div 에 padding 을 적용하면 적용된 padding  값만큼 크기가 늘어남 */
+		}
+		
+		div#div2{
+			width:600px; height: 600px; border:solid 1px #333;  margin-bottom:30px; position:relative; left:0px; top:0px;
+			/* position:relative 는 현자신의 위치를 기준으로 좌표를 적용 */
+		}
+		div#div2 .red{
+			width:200px; height:200px; float:left; background:red;
+		}
+		div#div2 .green{
+			width:200px; height:200px; float:left; background:green;
+			position:relative; left:50px; top:50px;
+			/* position:relative 는 현자신의 위치를 기준으로 좌표를 적용 */
+		}
+		
+				
+		div#div3{
+			width:600px; height: 600px; border:solid 1px #333;  margin-bottom:30px; position:relative; left:0px; top:0px;
+			/* position:absolute 는 부모에 position 값이 없는경우 부모로 인식을 
+			안하고 상위 부모좌표를 인식한다. 따라서 부모 div는 postion:relative; left:0px; top:0px 주어 위치변동이 없도록하고 
+			그안에 자식요소들을 position:absolute로 배치한다. */
+		}
+		div#div3 .red{
+			width:200px; height:200px; float:left; background:red;
+		}
+		div#div3 .green{
+			width:200px; height:200px; float:left; background:green;
+			position:absolute; left:50px; top:50px;
+			/*부모의 좌표를 기준으로 좌표를 적용*/
+		}
+		
+		
+	</style>
+
+</head>
+<body>
+
+
+<h3> div의 정렬 </h3>
+	<div id="div1">
+    	<div class="red">
+        	red
+        </div>
+        <div class="green">
+        	green 
+        </div>
+        <div class="yellow">
+        	yellow
+        </div>    
+    </div>
+    
+    
+    
+     <h3> div 의 position:relative  - 자신의 현위치를 기준으로 좌표를 적용 </h3>
+    <div id="div2">
+      <div class="red">
+          red
+        </div>
+        <div class="green">
+          green 
+        </div>          
+    </div>
+    
+    
+    
+    
+    
+    
+    <h3> div 의 position:absolute  - 부모의 좌표를 기준으로 좌표를 적용 </h3>
+    <div id="div3">
+    	<div class="red">
+        	red
+        </div>
+        <div class="green">
+        	green 
+        </div>          
+    </div>  
+
+
+
+
+</body>
+</html>
