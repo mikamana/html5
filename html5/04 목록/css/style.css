@@ -1,0 +1,28 @@
+ol,dl,ul li{
+
+    list-style: none;
+
+}
+
+ul li::before{
+
+    content:"";
+    display: block;
+    width:30px;
+    height:3px;
+    background: #000;
+    margin-bottom: 5px;
+
+}
+
+ul li::after{
+
+    content:"!!!"
+    
+}
+
+.test{
+    margin: 0 auto;
+}
+
+

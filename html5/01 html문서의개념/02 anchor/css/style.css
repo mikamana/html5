@@ -1,0 +1,19 @@
+html{
+
+    scroll-behavior: smooth;
+
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul,li,ol,dl{
+    list-style: none;
+}
+
+

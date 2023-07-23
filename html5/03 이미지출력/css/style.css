@@ -1,0 +1,50 @@
+img.naver{
+    width:100px;
+    height: 90px;
+    object-fit: contain;/* cover, contain */
+    /* object-position: left top; */
+    object-position: center; /* x y 를 설정한다. */
+}
+
+a.facebook{
+    width:250px;
+    height:50px;
+    /* background-image: url(../img/facebook.jpg); */
+    background: url(../img/facebook.jpg)no-repeat center;
+    background-size: contain;
+    display: block;
+
+}
+
+a.facebook:hover{
+    background-image: url(../img/facebook_over.png);
+}
+
+
+.box{
+    width:200px;
+    height:200px;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+.box1{
+    width:200px;
+    height:200px;
+    border:solid 1px gray;
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position:center ;
+
+}
+
+.box2{
+    background-image: url(../img/bg2.jpg), url(../img/bg2.jpg);
+    background-repeat: repeat-x, repeat-y;
+    background-position: center;
+}
+
+
+
+
+

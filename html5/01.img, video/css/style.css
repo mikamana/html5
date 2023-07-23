@@ -1,0 +1,37 @@
+
+.box{
+    width:200px;
+    height:200px;
+    border: solid 1px #000;
+    box-sizing: border-box;
+}
+
+.box1{
+    width:200px;
+    height:200px;
+    border:solid 1px gray;
+    background-image: url(../images/facebook.jpg);
+    background-repeat: no-repeat;
+    background-position:0% 50% ;
+}
+
+.box2{
+    background-image: url(../images/bg2.jpg), url(../images/bg2.jpg);
+    background-repeat: repeat-x, repeat-y;
+    background-position: center;
+}
+
+.box3{
+    background-image: url(../images/spriteimg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box4{
+    background-image: url(../images/facebook.jpg);
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+}
+
+
+

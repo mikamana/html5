@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>anchor</title>
+</head>
+<body>
+    
+    <main>
+        <h1>anchor</h1>
+        <p>hyper link를 구현하는 목적</p>
+        <hr>
+        <section>
+            <h2>anchor특징</h2>
+            <ul>
+                <li>사용법 : <a href="#;" target="_blank"></a></li>
+                <li>
+                    중요속성 
+                    <ul>
+                        <li>tel속성 : <a href="tel:01087542154">010-1245-1234</a></li>
+                        <!-- 전화패드가 나오게끔 해주는 속성 tel : 010-1234-5678 -->
+                        <li>mailto : <a href="mailto:a@a.net">메일보내기</a></li>
+                        <!-- 메일 계정 서비스를 이용할 수 있는 속성이다. -->
+                        <li><a href="memo.txt">파일다운로드</a></li>
+                        <!-- 파일이름을 적으면 파일을 다운로드 할 수 있게끔 하는 속성이다. -->
+                    </ul>
+                </li>
+                <li>
+                    CSS 제어 : 
+                    <a href="http://google.com">구글</a>
+                    <a href="http://facebook.com">페북</a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>경로</h2>
+            <ul>
+                <li>
+                    절대경로 : /
+                </li>
+                <li>
+                    상대경로 : ./ ../
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>internal link (내부링크)</h2>
+            <ul>
+                <li>href속성값의 #는 현재페이지</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>목차</h2>
+            <nav id ="nav">
+                <a href="">챕터1</a>
+                <a href="">챕터2</a>
+                <a href="#chap3">챕터3</a>
+            </nav>
+            <article id="chap1">
+                <h3>챕터1<a href="#nav">목차로</a>
+                </h3>
+                <p>
+
+                </p>
+            </article>
+                
+            <article id="chap2">
+                <h3>챕터2 <a href="#nav">목차로</a>
+                </h3>
+                <p>
+
+                </p>
+            </article>
+                
+            <article id ="chap3">
+                <h3>챕터3 <a href="#nav">목차로</a></h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed error temporibus sunt sequi quidem quas, optio perferendis, eligendi vero exercitationem ut aperiam minus architecto odit magni quia fugit animi facere.
+                </p>
+            </article>
+                
+
+        </section>
+        <hr>
+
+
+
+    </main>
+
+</body>
+</html>

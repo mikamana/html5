@@ -1,0 +1,13 @@
+.gmap{
+    width:100vw;
+    height:50vh;
+    border: solid 10px gray;
+    box-sizing: border-box;
+}
+
+.youtube{
+    width:800px; /* 유튜브 원래 비율은 560 : 315 이다.*/ /* 560 : 315 = 800 : x , 315*800 = 560x (315*800) /560 = x*/
+    height:450px;
+}
+    /* iframe은 비율을 계산해서 적용시켜야한다. */
+
